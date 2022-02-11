@@ -6,9 +6,9 @@ services:
     container_name: index-angular-prod
     build:
       context: .
-      dockerfile: prod.Dockerfile
+      dockerfile: dev.Dockerfile
     volumes:
       - /app
       - /app/node_modules
     ports:
-      - 80:80
+      - 4200:4200
